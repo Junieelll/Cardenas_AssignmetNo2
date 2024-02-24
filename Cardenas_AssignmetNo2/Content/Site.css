@@ -1,0 +1,228 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+    background-color: #2b4162;
+    background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.content-top {
+    background-color: white;
+}
+.content-top .pfp {
+    margin-right: 20px;
+    margin-top: 50px;
+    border-style: solid;
+    border-color: #0866ff;
+    border-width: 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+}
+.content-top h1 {
+    float: left;
+    padding: inherit;
+    padding-top: 175px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: white;
+}
+.content-top img {
+    width: 100%;
+    border-radius: 50%;
+    height: auto;
+    display: block;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+    .content-top a:hover {
+        background-color: #050505;
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+
+hr.break {
+    border-top: 1px solid white;
+    opacity: 0.5;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.content-body p{
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+}
+.body-container .slideshow-container {
+    font-family: Verdana, sans-serif;
+    border-radius: 10px;
+}
+    .body-container .slideshow-container .mySlides {
+        display: none
+    }
+
+    .body-container .slideshow-container img {
+        vertical-align: middle;
+        width: 500px;
+        height: 500px;
+        border-radius: 10px;
+    }
+    .body-container .slideshow-container {
+        width: 80%;
+        height: 500px;
+        position: relative;
+        margin: auto;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+
+        .body-container .slideshow-container .prev, .body-container .slideshow-container .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+
+    .body-container .slideshow-container .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    .body-container .slideshow-container .prev:hover, .body-container .slideshow-container .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+
+
+    .body-container .slideshow-container .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+
+.body-container .slideshow-container .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .body-container .active, .body-container .dot:hover {
+        background-color: #717171;
+    }
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+.container-skill {
+    width: 80%;
+    background-color: #ddd;
+}
+
+.body-container .skillset h1{
+    color: white;
+    padding-left: 0px;
+}
+.body-container .skillset p {
+    padding-left: 20px;
+    color: white;
+}
+
+.body-container .skillset {
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    padding-left: 20px;
+    margin-left: 100px;
+    
+}
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    
+}
+
+.skill1 {
+    width: 90%;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+    color: white;
+    padding-left: 5px;
+    height: 30px;
+}
+
+.skill2 {
+    width: 80%;
+    background-image: linear-gradient(to right, lightskyblue, blue);
+    color: white;
+    padding-left: 5px;
+    height: 30px;
+}
+
+.skill3 {
+    width: 65%;
+    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    color: white;
+    padding-left: 5px;
+    height: 30px;
+    
+}
+
+.skill4 {
+    width: 60%;
+    background: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+    color: white;
+    padding-left: 5px;
+    height: 30px;
+}
+
+

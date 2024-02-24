@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="container">
+    <div class="content-top">
+        <div class="pfp">
+            <a href="https://www.facebook.com/juniel.09"><img src="~/Content/22-0030.png" alt="Profile Picture" /></a>
+        </div>
+        <h1>Juniel Cardenas</h1>
+        
+    </div>
+    
+</div>
+<hr class="break" />
+
+<div class="body-container">
+    <div class="content-body">
+        <p>My hobby is taking picture of clouds, sky, and sunsets.</p>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides ">
+            <div class="numbertext">1 / 5</div>
+            <img src="~/Content/img_1.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="~/Content/img_2.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="~/Content/img_3.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="~/Content/img_4.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="~/Content/img_5.jpg" style="width:100%">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <div class="skillset">
+        <h1>My Skills</h1>
+
+        <p>Batak Magselos</p>
+        <div class="container-skill">
+            <div class="skill1">90%</div>
+        </div>
+
+        <p>Halimaw Mag-ovethink</p>
+        <div class="container-skill">
+            <div class="skill2">80%</div>
+        </div>
+
+        <p>Gaslighter</p>
+        <div class="container-skill">
+            <div class="skill3">65%</div>
+        </div>
+
+        <p>Soft-spoken Manipulator</p>
+        <div class="container-skill">
+            <div class="skill4">60%</div>
+        </div>
+    </div>
+
+</div>
+    <br>
+
+    
+    
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
